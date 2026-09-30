@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "dcb9d1e4-5c1b-4a78-b60d-9f4f4f45cfbf",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/fomo2/Documents/workspace/llm-atlas/atlas/llm-atlas-v2.json",
+  "output": "/Users/fomo2/Documents/workspace/llm-atlas/LLM-ATLAS.html",
+  "specification": {
+    "sha256": "7df60eda9307f9fd67c1840fb8f3eb14bbfd681a8618d1218214c52c9e62fa68",
+    "bytes": 10052
+  },
+  "artifact": {
+    "sha256": "837ebe09931e37e1c6f1485cee55f2bb892f4196350f4ddeeefb16fa5d78b1f4",
+    "bytes": 796698
+  }
+}

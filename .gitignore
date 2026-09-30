@@ -1,6 +1,9 @@
 .DS_Store
 tmp/
-output/
+output/*
+!output/pdf/
+output/pdf/*
+!output/pdf/LLM-Atlas.pdf
 atlas/visual-check/
 labs/.venv/
 labs/outputs/

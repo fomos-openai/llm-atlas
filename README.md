@@ -2,9 +2,9 @@
 
 > 面向资深前后端研发与技术专家：从大模型为何出现，到如何训练、评测、部署和持续演进，再到下一阶段可能去往何处。
 
-[打开交互知识地图](./LLM-ATLAS.html) · [进入知识树](./knowledge/00-navigation/README.md) · [开始可运行实践](./labs/README.md) · [阅读 PDF 小书](./output/pdf/LLM-Atlas.pdf)
-
 ![LLM Atlas v2 知识地图](./LLM-ATLAS.svg)
+
+[打开交互知识地图](./LLM-ATLAS.html) · [进入知识树](./knowledge/00-navigation/README.md) · [开始可运行实践](./labs/README.md) · [阅读 PDF 小书](./output/pdf/LLM-Atlas.pdf)
 
 ## 这不是模型名词表
 

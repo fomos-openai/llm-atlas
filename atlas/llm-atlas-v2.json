@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "LLM Atlas v2 · 从模型到行动系统",
+    "subtitle": "生命周期 · 学术与产业圣杯 · Top 模型路线 · 可复现实践 · 职业迁移",
+    "locale": "zh-CN",
+    "output": "LLM-ATLAS.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "git@github.com:fomos-openai/llm-atlas.git",
+      "revision": "ba6e195243dbfdf8bf60728a3dc3f9293b536b69",
+      "link_mode": "local-only"
+    }
+  },
+  "components": [
+    {"id":"pillar_lifecycle","type":"external","label":"完整生命周期","sublabel":"从哪里来 · 当下 · 未来","pos":[40,40],"size":[180,68],"sources":[{"path":"README.md","line":11,"end_line":17}]},
+    {"id":"pillar_grails","type":"security","label":"学术与产业圣杯","sublabel":"目标 · 指标 · 瓶颈 · 成熟度","pos":[280,40],"size":[190,68],"sources":[{"path":"README.md","line":18,"end_line":18}]},
+    {"id":"pillar_routes","type":"cloud","label":"成熟技术路线","sublabel":"稠密 · MoE · 推理 · Agent","pos":[530,40],"size":[190,68],"sources":[{"path":"README.md","line":19,"end_line":19}]},
+    {"id":"pillar_practice","type":"backend","label":"可复现技术实践","sublabel":"24GB 单卡 · 8 卡扩展","pos":[780,40],"size":[190,68],"sources":[{"path":"README.md","line":20,"end_line":20}]},
+    {"id":"pillar_career","type":"frontend","label":"研发职业迁移","sublabel":"前端 · 后端 · 平台 · 专家","pos":[995,40],"size":[190,68],"sources":[{"path":"README.md","line":21,"end_line":21}]},
+
+    {"id":"origins","type":"external","label":"源流与范式","sublabel":"注意力 · Transformer · Scaling","pos":[40,220],"size":[180,72],"sources":[{"path":"knowledge/01-origins/README.md","line":9,"end_line":21}]},
+    {"id":"goals","type":"security","label":"能力契约与评测","sublabel":"先定义成功、失败与预算","pos":[280,220],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/00-goals/capability-contract.md","line":9,"end_line":29}]},
+    {"id":"data","type":"database","label":"数据与 Tokenizer","sublabel":"来源 · 质量 · 混合 · 表示","pos":[520,220],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/01-data/sources-licenses-and-governance.md","line":9,"end_line":31},{"path":"knowledge/04-top-model-lifecycle/02-tokenization/tokenizer-evaluation.md","line":9,"end_line":29}]},
+    {"id":"architecture","type":"cloud","label":"模型架构","sublabel":"Decoder · MoE · 长上下文","pos":[760,220],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/03-architecture/decoder-only-transformer.md","line":9,"end_line":31}]},
+    {"id":"training","type":"backend","label":"训练系统","sublabel":"并行 · 精度 · 内核 · 容错","pos":[1000,220],"size":[175,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/04-training-system/data-tensor-pipeline-context-expert-parallelism.md","line":9,"end_line":31}]},
+
+    {"id":"pretrain","type":"backend","label":"预训练与 Mid-training","sublabel":"目标 · Scaling Pilot · 能力塑形","pos":[1000,410],"size":[175,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/05-pretraining/pretraining-runbook.md","line":9,"end_line":31},{"path":"knowledge/04-top-model-lifecycle/06-midtraining/capability-shaping.md","line":9,"end_line":29}]},
+    {"id":"posttrain","type":"backend","label":"后训练","sublabel":"SFT · DPO · Online RL · RLAIF","pos":[760,410],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/07-posttraining/supervised-fine-tuning.md","line":9,"end_line":31}]},
+    {"id":"reasoning","type":"cloud","label":"推理与测试时计算","sublabel":"验证器 · GRPO · 搜索 · 蒸馏","pos":[520,410],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/08-reasoning/verifiers-and-process-rewards.md","line":9,"end_line":31}]},
+    {"id":"evaluation","type":"security","label":"评测与安全门","sublabel":"能力 · 稳健 · 安全 · 成本","pos":[280,410],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/09-evaluation-and-safety/evaluation-system-design.md","line":9,"end_line":31}]},
+    {"id":"inference","type":"cloud","label":"压缩与推理服务","sublabel":"量化 · KV · 调度 · 路由","pos":[40,410],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/11-inference/serving-engines.md","line":9,"end_line":31}]},
+
+    {"id":"intelligence","type":"messagebus","label":"上下文与 Agent 系统","sublabel":"RAG · 记忆 · 工具 · 权限","pos":[40,600],"size":[180,72],"sources":[{"path":"knowledge/05-intelligence-systems/README.md","line":9,"end_line":31}]},
+    {"id":"production","type":"frontend","label":"生产工程","sublabel":"网关 · 编排 · 观测 · 降级","pos":[280,600],"size":[180,72],"sources":[{"path":"knowledge/07-production-engineering/README.md","line":9,"end_line":31}]},
+    {"id":"feedback","type":"database","label":"反馈、更新与退役","sublabel":"版本 · 事故 · 回放 · 蒸馏","pos":[520,600],"size":[180,72],"sources":[{"path":"knowledge/04-top-model-lifecycle/12-release-and-evolution/monitoring-and-feedback.md","line":9,"end_line":31}]},
+    {"id":"now","type":"external","label":"2026-10 状态快照","sublabel":"证据分级 · 成熟度记分板","pos":[760,600],"size":[180,72],"sources":[{"path":"knowledge/08-state-of-the-field/README.md","line":9,"end_line":31}]},
+    {"id":"future","type":"external","label":"未来情景","sublabel":"持续学习 · 自治 · 世界模型","pos":[1000,600],"size":[175,72],"sources":[{"path":"knowledge/09-future/README.md","line":9,"end_line":31}]},
+
+    {"id":"single_gpu","type":"backend","label":"单卡实践链","sublabel":"Atlas-125M · Qwen3-0.6B","pos":[760,790],"size":[180,72],"sources":[{"path":"knowledge/06-hands-on-practice/README.md","line":9,"end_line":31},{"path":"labs/README.md","line":1,"end_line":18}]},
+    {"id":"scaleout","type":"cloud","label":"工业扩展链","sublabel":"8×80GB · FSDP · 检查点","pos":[1000,790],"size":[180,72],"sources":[{"path":"knowledge/06-hands-on-practice/13-scale-from-one-to-eight-gpus.md","line":9,"end_line":31},{"path":"labs/configs/eight-gpu-fsdp.yaml","line":1,"end_line":19}]},
+    {"id":"career_front","type":"frontend","label":"前端 → AI Engineer","sublabel":"流式交互 · 多模态 · Agent UX","pos":[40,790],"size":[180,72],"sources":[{"path":"knowledge/10-career/frontend-to-ai-engineer.md","line":9,"end_line":31}]},
+    {"id":"career_back","type":"backend","label":"后端 → LLM 平台","sublabel":"网关 · 编排 · 服务可靠性","pos":[280,790],"size":[180,72],"sources":[{"path":"knowledge/10-career/backend-to-llm-platform-engineer.md","line":9,"end_line":31}]},
+    {"id":"career_expert","type":"security","label":"专家化路线","sublabel":"模型 · 推理 · Agent · 评测安全","pos":[520,790],"size":[180,72],"sources":[{"path":"knowledge/10-career/README.md","line":9,"end_line":31}]}
+  ],
+  "boundaries": [
+    {"kind":"region","label":"主生命周期","wraps":["origins","goals","data","architecture","training","pretrain","posttrain","reasoning","evaluation","inference","intelligence","production","feedback","now","future"],"pad":22},
+    {"kind":"region","label":"可复现实践","wraps":["single_gpu","scaleout"],"pad":18},
+    {"kind":"region","label":"职业迁移","wraps":["career_front","career_back","career_expert"],"pad":18}
+  ],
+  "connections": [
+    {"id":"origin-goal","from":"origins","to":"goals","label":"历史约束","variant":"emphasis"},
+    {"id":"goal-data","from":"goals","to":"data","label":"目标配数","variant":"emphasis"},
+    {"id":"data-arch","from":"data","to":"architecture","label":"数据塑形","variant":"emphasis"},
+    {"id":"arch-train","from":"architecture","to":"training","label":"架构落地","variant":"emphasis"},
+    {"id":"train-pre","from":"training","to":"pretrain","label":"稳定训练","variant":"emphasis"},
+    {"id":"pre-post","from":"pretrain","to":"posttrain","label":"行为对齐","variant":"emphasis"},
+    {"id":"post-reason","from":"posttrain","to":"reasoning","label":"推理塑形","variant":"emphasis"},
+    {"id":"reason-eval","from":"reasoning","to":"evaluation","label":"独立评测","variant":"emphasis"},
+    {"id":"eval-infer","from":"evaluation","to":"inference","label":"通过门禁","variant":"emphasis"},
+    {"id":"infer-intel","from":"inference","to":"intelligence","label":"连接工具","variant":"emphasis"},
+    {"id":"intel-prod","from":"intelligence","to":"production","label":"进入生产","variant":"emphasis"},
+    {"id":"prod-feedback","from":"production","to":"feedback","label":"反馈回流","variant":"emphasis"},
+    {"id":"feedback-now","from":"feedback","to":"now","label":"沉淀证据"},
+    {"id":"now-future","from":"now","to":"future","label":"形成情景","variant":"dashed"},
+    {"id":"feedback-goal","from":"feedback","to":"goals","label":"重写目标","variant":"dashed","fromSide":"bottom","toSide":"top","route":"orthogonal-v","via":[[610,700],[20,700],[20,180],[370,180]]},
+    {"id":"single-scale","from":"single_gpu","to":"scaleout","label":"并行扩展"},
+    {"id":"career-front","from":"career_front","to":"career_back","label":"能力复用"},
+    {"id":"career-expert","from":"career_back","to":"career_expert","label":"专项深化"}
+  ],
+  "cards": [
+    {"dot":"cyan","title":"生命周期判据","items":["模型能力 ≠ 系统能力","评测先于训练，反馈连接下一轮目标","稳定知识与日期快照分离"]},
+    {"dot":"violet","title":"实践判据","items":["CPU smoke → 24GB 单卡 → 8 卡扩展","自进化 = 生成、验证、课程、训练、独立回归","不把未实跑配置冒充基准结果"]},
+    {"dot":"amber","title":"成长判据","items":["能定义问题、建立基线、定位失败","作品保留配置、成本、事故与决策证据","先复用工程优势，再补模型与实验方法"]}
+  ]
+}

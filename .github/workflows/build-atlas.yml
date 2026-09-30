@@ -1,0 +1,11 @@
+name: atlas-source-check
+on:
+  pull_request:
+    paths: ["atlas/**", "knowledge/**", "scripts/build_atlas.mjs"]
+jobs:
+  json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m json.tool atlas/llm-atlas.json >/dev/null
+

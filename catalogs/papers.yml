@@ -1,0 +1,40 @@
+schema_version: 1
+last_verified: 2026-09-30
+papers:
+  - id: attention-is-all-you-need
+    year: 2017
+    topics: [architecture, attention]
+    url: https://arxiv.org/abs/1706.03762
+  - id: scaling-laws
+    year: 2020
+    topics: [scaling, pretraining]
+    url: https://arxiv.org/abs/2001.08361
+  - id: rag
+    year: 2020
+    topics: [retrieval, grounding]
+    url: https://arxiv.org/abs/2005.11401
+  - id: chinchilla
+    year: 2022
+    topics: [scaling, compute-optimal]
+    url: https://arxiv.org/abs/2203.15556
+  - id: instructgpt
+    year: 2022
+    topics: [post-training, rlhf]
+    url: https://arxiv.org/abs/2203.02155
+  - id: chain-of-thought
+    year: 2022
+    topics: [reasoning]
+    url: https://arxiv.org/abs/2201.11903
+  - id: flashattention
+    year: 2022
+    topics: [attention, efficiency]
+    url: https://arxiv.org/abs/2205.14135
+  - id: dpo
+    year: 2023
+    topics: [post-training, preference]
+    url: https://arxiv.org/abs/2305.18290
+  - id: react
+    year: 2023
+    topics: [agents, tools]
+    url: https://arxiv.org/abs/2210.03629
+

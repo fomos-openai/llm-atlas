@@ -1,0 +1,53 @@
+schema_version: 1
+last_verified: 2026-09-30
+scope: "Representative model families and architectural milestones; not a live leaderboard."
+models:
+  - id: transformer
+    year: 2017
+    organization: Google Research
+    category: encoder-decoder
+    contribution: "Transformer architecture"
+    source: https://arxiv.org/abs/1706.03762
+  - id: bert
+    year: 2018
+    organization: Google
+    category: encoder
+    contribution: "Bidirectional pretraining and fine-tuning"
+    source: https://arxiv.org/abs/1810.04805
+  - id: gpt-3
+    year: 2020
+    organization: OpenAI
+    category: decoder-only
+    contribution: "Large-scale in-context learning"
+    source: https://arxiv.org/abs/2005.14165
+  - id: switch-transformer
+    year: 2021
+    organization: Google
+    category: mixture-of-experts
+    contribution: "Sparse expert scaling"
+    source: https://arxiv.org/abs/2101.03961
+  - id: instructgpt
+    year: 2022
+    organization: OpenAI
+    category: post-trained
+    contribution: "Instruction following with human feedback"
+    source: https://arxiv.org/abs/2203.02155
+  - id: llama
+    year: 2023
+    organization: Meta
+    category: open-weight-family
+    contribution: "Catalyzed the modern open-weight ecosystem"
+    source: https://arxiv.org/abs/2302.13971
+  - id: mistral-7b
+    year: 2023
+    organization: Mistral AI
+    category: efficient-open-weight
+    contribution: "Grouped-query and sliding-window attention"
+    source: https://arxiv.org/abs/2310.06825
+  - id: deepseek-r1
+    year: 2025
+    organization: DeepSeek
+    category: reasoning
+    contribution: "Open reasoning model and reinforcement-learning recipe"
+    source: https://arxiv.org/abs/2501.12948
+

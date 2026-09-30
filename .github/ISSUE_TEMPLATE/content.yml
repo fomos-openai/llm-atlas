@@ -1,0 +1,22 @@
+name: 内容补充或勘误
+description: 提交知识点、来源或过时信息
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 页面
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: 建议修改
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 原始资料与核验日期
+    validations:
+      required: true
+

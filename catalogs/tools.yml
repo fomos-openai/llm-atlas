@@ -1,0 +1,31 @@
+schema_version: 1
+last_verified: 2026-09-30
+tools:
+  - id: pytorch
+    layer: training
+    source: https://pytorch.org/
+  - id: jax
+    layer: training
+    source: https://github.com/jax-ml/jax
+  - id: transformers
+    layer: model-library
+    source: https://github.com/huggingface/transformers
+  - id: megatron-lm
+    layer: distributed-training
+    source: https://github.com/NVIDIA/Megatron-LM
+  - id: deepspeed
+    layer: distributed-training
+    source: https://github.com/microsoft/DeepSpeed
+  - id: vllm
+    layer: inference
+    source: https://github.com/vllm-project/vllm
+  - id: llama-cpp
+    layer: edge-inference
+    source: https://github.com/ggml-org/llama.cpp
+  - id: lm-evaluation-harness
+    layer: evaluation
+    source: https://github.com/EleutherAI/lm-evaluation-harness
+  - id: archify
+    layer: knowledge-visualization
+    source: https://github.com/tt-a1i/archify
+

@@ -1,0 +1,12 @@
+name: book-source-check
+on:
+  pull_request:
+    paths: ["book/**", "scripts/build_book.py"]
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: test -f book/metadata.yml
+      - run: test -d book/chapters
+

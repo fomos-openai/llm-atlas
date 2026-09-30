@@ -1,0 +1,4 @@
+模型通过预测下一个符号学习序列规律。
+Reliable systems make failures observable and recoverable.
+验证器只能证明它所检查的条件，不能证明开放世界中的全部正确性。
+

@@ -1,0 +1,19 @@
+run_name: atlas-eight-gpu-fsdp
+model_family: atlas-decoder
+dataset: licensed-bilingual-manifest-v1
+output_dir: outputs/atlas-fsdp
+seed: 42
+vocab_size: 48000
+sequence_length: 4096
+layers: 32
+heads: 32
+hidden_size: 4096
+intermediate_size: 11008
+batch_size: 1
+gradient_accumulation: 16
+learning_rate: 0.0003
+max_steps: 10000
+precision: bf16
+strategy: fsdp
+world_size: 8
+

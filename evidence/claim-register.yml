@@ -1,0 +1,24 @@
+schema_version: 2
+last_verified: 2026-10-01
+claims:
+  - id: transformer-parallel-sequence-model
+    statement: Transformer以注意力和前馈网络为主要序列建模组件，并支持高并行度训练。
+    evidence_level: E1
+    source: https://arxiv.org/abs/1706.03762
+    pages: [knowledge/01-origins/transformer-and-self-supervision.md]
+  - id: compute-optimal-balance
+    statement: 固定训练计算下，模型规模与训练token数量需要协调选择。
+    evidence_level: E1
+    source: https://arxiv.org/abs/2203.15556
+    pages: [knowledge/04-top-model-lifecycle/00-goals/scaling-plan-and-budget.md]
+  - id: qwen3-family-range
+    statement: Qwen3技术报告描述了从0.6B到235B、同时包含稠密和MoE的模型系列。
+    evidence_level: E2
+    source: https://arxiv.org/abs/2505.09388
+    pages: [knowledge/03-mature-technology-schools/case-studies/qwen-family.md]
+  - id: self-evolution-definition
+    statement: 本项目中的自进化是受验证器约束的迭代训练闭环，不代表无限递归自我改进。
+    evidence_level: E4
+    source: knowledge/06-hands-on-practice/09-self-evolution-loop.md
+    pages: [README.md, knowledge/02-grails/academic/recursive-self-improvement.md]
+

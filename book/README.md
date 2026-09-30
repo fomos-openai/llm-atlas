@@ -1,12 +1,12 @@
-# PDF 小书
+# LLM Atlas 小书
 
-《LLM Atlas：从预测模型到行动系统》是主知识库的提炼版。它不重复全部条目，而是建立一条连贯叙事，并把深入阅读链接回仓库。
-
-构建：
+小书用 14 章串联知识库五条主线，目标页数为 120–160 页。正文只保留形成全景所需的概念、决策与实践顺序；每个主题都链接到仓库中的扩展文章。
 
 ```bash
-python3 scripts/build_book.py
+python scripts/scaffold_book.py
+python scripts/build_book.py
+python scripts/validate_pdf.py
 ```
 
-最终制品位于根目录 `LLM-ATLAS.pdf`。章节源位于 `book/chapters/`，版式与元数据位于本目录。
+最终文件位于 `output/pdf/LLM-Atlas.pdf`，并由根目录 README 链接。
 

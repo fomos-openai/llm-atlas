@@ -2,4 +2,7 @@
 tmp/
 output/
 atlas/visual-check/
-
+labs/.venv/
+labs/outputs/
+**/__pycache__/
+.pytest_cache/

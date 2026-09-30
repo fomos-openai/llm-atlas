@@ -1,0 +1,19 @@
+run_name: qwen3-0.6b-sft-lora
+model_family: Qwen/Qwen3-0.6B-Base
+dataset: instruction-manifest-v1
+output_dir: outputs/qwen3-sft
+seed: 42
+vocab_size: 151936
+sequence_length: 4096
+layers: 28
+heads: 16
+hidden_size: 1024
+intermediate_size: 3072
+batch_size: 2
+gradient_accumulation: 16
+learning_rate: 0.0002
+max_steps: 1000
+precision: bf16
+strategy: single
+world_size: 1
+

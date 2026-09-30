@@ -1,26 +1,20 @@
-schema_version: 1
-last_verified: 2026-09-30
-warning: "Scores are incomparable without matching model, prompt, tools, sampling budget and benchmark revision."
+schema_version: 2
+last_verified: 2026-10-01
 benchmarks:
   - id: mmlu
-    domain: knowledge-reasoning
+    domain: knowledge-and-reasoning
+    contamination_risk: high
     source: https://arxiv.org/abs/2009.03300
-  - id: big-bench
-    domain: broad-capability
-    source: https://arxiv.org/abs/2206.04615
   - id: humaneval
-    domain: code-generation
+    domain: code
+    contamination_risk: high
     source: https://arxiv.org/abs/2107.03374
   - id: swe-bench
     domain: software-engineering-agent
+    contamination_risk: medium
     source: https://arxiv.org/abs/2310.06770
-  - id: helm
-    domain: holistic-evaluation
-    source: https://arxiv.org/abs/2211.09110
   - id: osworld
     domain: computer-use-agent
+    contamination_risk: medium
     source: https://arxiv.org/abs/2404.07972
-  - id: ailuminate
-    domain: safety
-    source: https://mlcommons.org/ailuminate/
 

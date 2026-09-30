@@ -1,0 +1,19 @@
+run_name: atlas-125m-single-gpu
+model_family: atlas-decoder
+dataset: licensed-bilingual-manifest-v1
+output_dir: outputs/atlas-125m
+seed: 42
+vocab_size: 48000
+sequence_length: 2048
+layers: 16
+heads: 12
+hidden_size: 768
+intermediate_size: 2304
+batch_size: 2
+gradient_accumulation: 64
+learning_rate: 0.0003
+max_steps: 20000
+precision: bf16
+strategy: single
+world_size: 1
+

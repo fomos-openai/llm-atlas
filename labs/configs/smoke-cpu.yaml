@@ -1,0 +1,19 @@
+run_name: smoke-cpu
+model_family: atlas-decoder
+dataset: fixtures/tiny-corpus.txt
+output_dir: outputs/smoke
+seed: 42
+vocab_size: 256
+sequence_length: 32
+layers: 2
+heads: 2
+hidden_size: 64
+intermediate_size: 192
+batch_size: 2
+gradient_accumulation: 1
+learning_rate: 0.001
+max_steps: 2
+precision: fp32
+strategy: single
+world_size: 1
+

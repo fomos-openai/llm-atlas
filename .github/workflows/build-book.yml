@@ -1,12 +1,14 @@
-name: book-source-check
+name: book-source
 on:
   pull_request:
-    paths: ["book/**", "scripts/build_book.py"]
+    paths: ["book/**", "scripts/build_book.py", "scripts/validate_pdf.py"]
 jobs:
-  source:
+  validate-source:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
       - run: test -f book/metadata.yml
-      - run: test -d book/chapters
+      - run: test $(find book/chapters -name '*.md' | wc -l) -eq 14
 

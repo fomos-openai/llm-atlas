@@ -1,0 +1,19 @@
+run_name: qwen3-0.6b-verifiable-rl
+model_family: Qwen/Qwen3-0.6B-Base
+dataset: verified-math-code-v1
+output_dir: outputs/qwen3-vrl
+seed: 42
+vocab_size: 151936
+sequence_length: 2048
+layers: 28
+heads: 16
+hidden_size: 1024
+intermediate_size: 3072
+batch_size: 1
+gradient_accumulation: 16
+learning_rate: 0.000001
+max_steps: 500
+precision: bf16
+strategy: single
+world_size: 1
+

@@ -1,0 +1,19 @@
+schema_version: 2
+last_verified: 2026-10-01
+frameworks:
+  - id: pytorch
+    layer: tensor-and-distributed-runtime
+    source: https://pytorch.org/docs/stable/index.html
+  - id: transformers
+    layer: model-and-training-ecosystem
+    source: https://huggingface.co/docs/transformers/index
+  - id: trl
+    layer: posttraining
+    source: https://huggingface.co/docs/trl/index
+  - id: megatron-core
+    layer: large-scale-training
+    source: https://github.com/NVIDIA/Megatron-LM
+  - id: vllm
+    layer: inference-serving
+    source: https://docs.vllm.ai/
+

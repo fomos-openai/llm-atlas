@@ -1,0 +1,15 @@
+name: test-labs
+on:
+  pull_request:
+    paths: ["labs/**", "scripts/validate_labs.py"]
+jobs:
+  cpu-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -e 'labs[dev]'
+      - run: cd labs && PYTHONPATH=src python -m unittest discover -s tests
+      - run: cd labs && atlas-lab pretrain --config configs/smoke-cpu.yaml --smoke
+

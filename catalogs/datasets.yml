@@ -1,28 +1,20 @@
-schema_version: 1
-last_verified: 2026-09-30
+schema_version: 2
+last_verified: 2026-10-01
 datasets:
-  - id: common-crawl
-    type: web-crawl
-    role: "Raw source for many web corpora"
-    source: https://commoncrawl.org/
-  - id: the-pile
-    type: text-mixture
-    role: "Documented mixture for language-model research"
-    source: https://arxiv.org/abs/2101.00027
-  - id: c4
-    type: cleaned-web
-    role: "Colossal Clean Crawled Corpus"
-    source: https://www.tensorflow.org/datasets/catalog/c4
-  - id: redpajama-data
-    type: reproducible-mixture
-    role: "Open reproduction-oriented pretraining data"
-    source: https://github.com/togethercomputer/RedPajama-Data
-  - id: fineweb
-    type: cleaned-web
-    role: "Large documented web corpus"
-    source: https://huggingface.co/datasets/HuggingFaceFW/fineweb
-  - id: dolly-15k
-    type: instruction
-    role: "Human-authored instruction examples"
-    source: https://huggingface.co/datasets/databricks/databricks-dolly-15k
+  - id: tinystories
+    stage: pretraining-teaching
+    license_review_required: true
+    source: https://arxiv.org/abs/2305.07759
+  - id: dolma
+    stage: pretraining
+    license_review_required: true
+    source: https://huggingface.co/datasets/allenai/dolma
+  - id: fineweb-edu
+    stage: pretraining
+    license_review_required: true
+    source: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+  - id: ultrafeedback
+    stage: preference
+    license_review_required: true
+    source: https://huggingface.co/datasets/openbmb/UltraFeedback
 

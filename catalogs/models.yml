@@ -1,53 +1,34 @@
-schema_version: 1
-last_verified: 2026-09-30
-scope: "Representative model families and architectural milestones; not a live leaderboard."
+schema_version: 2
+last_verified: 2026-10-01
 models:
-  - id: transformer
-    year: 2017
-    organization: Google Research
-    category: encoder-decoder
-    contribution: "Transformer architecture"
-    source: https://arxiv.org/abs/1706.03762
-  - id: bert
-    year: 2018
-    organization: Google
-    category: encoder
-    contribution: "Bidirectional pretraining and fine-tuning"
-    source: https://arxiv.org/abs/1810.04805
-  - id: gpt-3
-    year: 2020
-    organization: OpenAI
-    category: decoder-only
-    contribution: "Large-scale in-context learning"
-    source: https://arxiv.org/abs/2005.14165
-  - id: switch-transformer
-    year: 2021
-    organization: Google
-    category: mixture-of-experts
-    contribution: "Sparse expert scaling"
-    source: https://arxiv.org/abs/2101.03961
-  - id: instructgpt
-    year: 2022
-    organization: OpenAI
-    category: post-trained
-    contribution: "Instruction following with human feedback"
-    source: https://arxiv.org/abs/2203.02155
-  - id: llama
-    year: 2023
+  - id: llama-3
     organization: Meta
-    category: open-weight-family
-    contribution: "Catalyzed the modern open-weight ecosystem"
-    source: https://arxiv.org/abs/2302.13971
-  - id: mistral-7b
-    year: 2023
-    organization: Mistral AI
-    category: efficient-open-weight
-    contribution: "Grouped-query and sliding-window attention"
-    source: https://arxiv.org/abs/2310.06825
-  - id: deepseek-r1
-    year: 2025
+    architecture: dense-decoder
+    openness: open-weights
+    modalities: [text]
+    source: https://arxiv.org/abs/2407.21783
+  - id: deepseek-v3
     organization: DeepSeek
-    category: reasoning
-    contribution: "Open reasoning model and reinforcement-learning recipe"
-    source: https://arxiv.org/abs/2501.12948
+    architecture: sparse-moe-mla
+    openness: open-weights
+    modalities: [text]
+    source: https://arxiv.org/abs/2412.19437
+  - id: qwen3-0.6b-base
+    organization: Alibaba-Qwen
+    architecture: dense-decoder
+    openness: apache-2.0
+    modalities: [text]
+    source: https://arxiv.org/abs/2505.09388
+  - id: olmo
+    organization: AI2
+    architecture: dense-decoder
+    openness: weights-data-code-logs
+    modalities: [text]
+    source: https://arxiv.org/abs/2402.00838
+  - id: mixtral-8x7b
+    organization: Mistral-AI
+    architecture: sparse-moe
+    openness: open-weights
+    modalities: [text]
+    source: https://arxiv.org/abs/2401.04088
 

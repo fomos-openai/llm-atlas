@@ -1,8 +1,9 @@
-title: "LLM Atlas：从预测模型到行动系统"
-subtitle: "大模型从哪里来、当下处于什么阶段、未来要去往何处"
+title: "LLM Atlas v2：从模型到行动系统"
+subtitle: "大模型完整生命周期、圣杯、Top 模型路线、可复现实践与职业迁移"
 author: "LLM Atlas Contributors"
-edition: "2026-09"
+edition: "2026-10"
 language: "zh-CN"
 repository: "https://github.com/fomos-openai/llm-atlas"
 license: "MIT"
+target_pages: "120-160"
 

@@ -1,12 +1,12 @@
-# Atlas 构建说明
+# Archify 知识地图
 
-`llm-atlas.json` 是 Archify architecture schema 的 typed JSON 源；根目录 `LLM-ATLAS.html` 是经 Archify showcase profile 验证的独立交互制品，`LLM-ATLAS.svg` 是 README 预览。
+`llm-atlas-v2.json` 是根目录 `LLM-ATLAS.html` 的 typed specification。地图用五个区域呈现生命周期、学术与产业圣杯、成熟技术路线、可运行实践和职业迁移，并把当前状态与未来反馈回目标定义。
 
-重建：
+生成命令：
 
 ```bash
 node scripts/build_atlas.mjs /absolute/path/to/archify/bin/archify.mjs
 ```
 
-修改知识树拓扑时应同步修改 JSON，并保留 Archify 的 finalize summary 与 artifact receipt。历史大改版放入 `snapshots/`。
+交付必须通过 Archify 的 validate、deliver、strict check 与 browser-check；感知检查另行渲染明暗主题截图。
 

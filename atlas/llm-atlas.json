@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "LLM Atlas · 大模型技术全生命周期",
+    "locale": "zh-CN",
+    "output": "LLM-ATLAS.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/fomos-openai/llm-atlas",
+      "provider": "github",
+      "link_mode": "web",
+      "revision": "270b0da998405fa7b6ad1bd919cf3e6ac0db1527"
+    },
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "external": { "label": "入口与阶段" },
+        "cloud": { "label": "基础与架构" },
+        "database": { "label": "数据与知识" },
+        "backend": { "label": "训练与系统" },
+        "messagebus": { "label": "交互与生态" },
+        "security": { "label": "安全与治理" },
+        "frontend": { "label": "输出与参考" }
+      }
+    }
+  },
+  "components": [
+    { "id": "start", "type": "external", "label": "00 从这里开始", "sublabel": "生命周期 · 分类 · 学习路线", "pos": [40, 80], "size": [190, 72], "sources": [{ "path": "knowledge/00-start-here/README.md", "line": 1, "label": "章节入口" }] },
+    { "id": "origins", "type": "external", "label": "01 历史源流", "sublabel": "符号 · 统计 · Transformer · 规模", "pos": [280, 80], "size": [190, 72], "sources": [{ "path": "knowledge/01-origins/README.md", "line": 1, "label": "历史源流" }] },
+    { "id": "foundations", "type": "cloud", "label": "02 数学与学习基础", "sublabel": "概率 · 信息 · 优化 · 强化学习", "pos": [520, 80], "size": [190, 72], "sources": [{ "path": "knowledge/02-foundations/README.md", "line": 1, "label": "基础" }] },
+    { "id": "data", "type": "database", "label": "03 数据", "sublabel": "来源 · 质量 · 合成 · 治理", "pos": [760, 80], "size": [190, 72], "sources": [{ "path": "knowledge/03-data/README.md", "line": 1, "label": "数据" }] },
+    { "id": "representation", "type": "database", "label": "04 Token 与表示", "sublabel": "分词 · 嵌入 · 位置 · 上下文", "pos": [1000, 80], "size": [190, 72], "sources": [{ "path": "knowledge/04-tokenization-and-representation/README.md", "line": 1, "label": "表示" }] },
+    { "id": "architecture", "type": "cloud", "label": "05 模型架构", "sublabel": "Attention · MoE · 长上下文 · 混合", "pos": [1240, 80], "size": [190, 72], "sources": [{ "path": "knowledge/05-model-architectures/README.md", "line": 1, "label": "架构" }] },
+    { "id": "pretraining", "type": "backend", "label": "06 预训练", "sublabel": "目标 · 扩展 · 分布式 · 稳定性", "pos": [1480, 80], "size": [190, 72], "sources": [{ "path": "knowledge/06-pretraining/README.md", "line": 1, "label": "预训练" }] },
+
+    { "id": "posttraining", "type": "backend", "label": "07 后训练", "sublabel": "SFT · 偏好 · RL · 蒸馏", "pos": [1480, 300], "size": [190, 72], "sources": [{ "path": "knowledge/07-post-training/README.md", "line": 1, "label": "后训练" }] },
+    { "id": "reasoning", "type": "backend", "label": "08 推理时计算", "sublabel": "思维链 · 搜索 · 验证 · 校准", "pos": [1240, 300], "size": [190, 72], "sources": [{ "path": "knowledge/08-reasoning-and-test-time-compute/README.md", "line": 1, "label": "推理" }] },
+    { "id": "evaluation", "type": "security", "label": "09 评测", "sublabel": "能力 · Agent · 安全 · EvalOps", "pos": [1000, 300], "size": [190, 72], "sources": [{ "path": "knowledge/09-evaluation/README.md", "line": 1, "label": "评测" }] },
+    { "id": "inference", "type": "backend", "label": "10 推理与效率", "sublabel": "解码 · 缓存 · 量化 · 服务", "pos": [760, 300], "size": [190, 72], "sources": [{ "path": "knowledge/10-inference-and-efficiency/README.md", "line": 1, "label": "推理系统" }] },
+    { "id": "context", "type": "database", "label": "11 上下文与知识", "sublabel": "Prompt · RAG · 记忆 · 协议", "pos": [520, 300], "size": [190, 72], "sources": [{ "path": "knowledge/11-context-and-knowledge/README.md", "line": 1, "label": "上下文" }] },
+    { "id": "agents", "type": "messagebus", "label": "12 Agent 与工具", "sublabel": "规划 · 执行 · 多 Agent · 长任务", "pos": [280, 300], "size": [190, 72], "sources": [{ "path": "knowledge/12-agents-and-tool-use/README.md", "line": 1, "label": "Agent" }] },
+    { "id": "multimodal", "type": "messagebus", "label": "13 多模态与生成", "sublabel": "视觉 · 语音 · 视频 · 具身", "pos": [40, 300], "size": [190, 72], "sources": [{ "path": "knowledge/13-multimodal-and-generation/README.md", "line": 1, "label": "多模态" }] },
+
+    { "id": "safety", "type": "security", "label": "14 安全与隐私", "sublabel": "对齐 · 注入 · 控制 · 事件", "pos": [40, 520], "size": [190, 72], "sources": [{ "path": "knowledge/14-safety-security-and-privacy/README.md", "line": 1, "label": "安全" }] },
+    { "id": "production", "type": "backend", "label": "15 生产生命周期", "sublabel": "部署 · 观测 · 路由 · LLMOps", "pos": [280, 520], "size": [190, 72], "sources": [{ "path": "knowledge/15-production-lifecycle/README.md", "line": 1, "label": "生产" }] },
+    { "id": "infrastructure", "type": "cloud", "label": "16 基础设施与经济", "sublabel": "芯片 · 集群 · 能源 · 成本", "pos": [520, 520], "size": [190, 72], "sources": [{ "path": "knowledge/16-infrastructure-hardware-and-economics/README.md", "line": 1, "label": "基础设施" }] },
+    { "id": "ecosystem", "type": "messagebus", "label": "17 生态与应用", "sublabel": "模型 · 工具 · 许可 · 监管", "pos": [760, 520], "size": [190, 72], "sources": [{ "path": "knowledge/17-ecosystem-and-applications/README.md", "line": 1, "label": "生态" }] },
+    { "id": "current", "type": "external", "label": "18 领域现状", "sublabel": "2026-09 能力 · 采用 · 瓶颈", "pos": [1000, 520], "size": [190, 72], "sources": [{ "path": "knowledge/18-state-of-the-field/README.md", "line": 1, "label": "现状" }] },
+    { "id": "future", "type": "external", "label": "19 未来前沿", "sublabel": "持续学习 · 自主 · 世界模型", "pos": [1240, 520], "size": [190, 72], "sources": [{ "path": "knowledge/19-future-frontiers/README.md", "line": 1, "label": "未来" }] },
+    { "id": "reference", "type": "frontend", "label": "20 参考手册", "sublabel": "术语 · 公式 · 时间线 · 目录", "pos": [1480, 520], "size": [190, 72], "sources": [{ "path": "knowledge/20-reference/README.md", "line": 1, "label": "参考" }] }
+  ],
+  "connections": [
+    { "id": "start-origins", "from": "start", "to": "origins", "label": "从哪里来", "variant": "emphasis" },
+    { "id": "origins-foundations", "from": "origins", "to": "foundations", "label": "理论抽象", "variant": "emphasis" },
+    { "id": "foundations-data", "from": "foundations", "to": "data", "label": "学习材料", "variant": "emphasis" },
+    { "id": "data-representation", "from": "data", "to": "representation", "label": "编码", "variant": "emphasis" },
+    { "id": "representation-architecture", "from": "representation", "to": "architecture", "label": "计算结构", "variant": "emphasis" },
+    { "id": "architecture-pretraining", "from": "architecture", "to": "pretraining", "label": "规模学习", "variant": "emphasis" },
+    { "id": "pretraining-posttraining", "from": "pretraining", "to": "posttraining", "label": "塑造行为", "variant": "emphasis", "fromSide": "bottom", "toSide": "top" },
+    { "id": "posttraining-reasoning", "from": "posttraining", "to": "reasoning", "label": "思考策略", "variant": "emphasis" },
+    { "id": "reasoning-evaluation", "from": "reasoning", "to": "evaluation", "label": "验证边界", "variant": "emphasis" },
+    { "id": "evaluation-inference", "from": "evaluation", "to": "inference", "label": "发布门", "variant": "emphasis" },
+    { "id": "inference-context", "from": "inference", "to": "context", "label": "动态知识", "variant": "emphasis" },
+    { "id": "context-agents", "from": "context", "to": "agents", "label": "连接工具", "variant": "emphasis" },
+    { "id": "agents-multimodal", "from": "agents", "to": "multimodal", "label": "感知行动", "variant": "emphasis" },
+    { "id": "multimodal-safety", "from": "multimodal", "to": "safety", "label": "约束风险", "variant": "security", "fromSide": "bottom", "toSide": "top" },
+    { "id": "safety-production", "from": "safety", "to": "production", "label": "受控部署", "variant": "security" },
+    { "id": "production-infrastructure", "from": "production", "to": "infrastructure", "label": "资源承载" },
+    { "id": "infrastructure-ecosystem", "from": "infrastructure", "to": "ecosystem", "label": "规模供给" },
+    { "id": "ecosystem-current", "from": "ecosystem", "to": "current", "label": "当下阶段" },
+    { "id": "current-future", "from": "current", "to": "future", "label": "证据推演", "variant": "dashed" },
+    { "id": "future-reference", "from": "future", "to": "reference", "label": "持续更新", "variant": "dashed" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "从哪里来", "items": ["符号与统计学习汇合", "Transformer + 规模化形成基础模型"] },
+    { "dot": "emerald", "title": "当下阶段", "items": ["从生成模型走向推理与行动系统", "能力提升快于可靠性、评测与治理"] },
+    { "dot": "violet", "title": "未来方向", "items": ["持续学习、长时 Agent、世界模型与 AI for Science", "证据、权限和可恢复控制决定可用边界"] }
+  ]
+}
